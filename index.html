@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ihsaan's Recipes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <h1>Ihsaan's Recipes</h1>
+    </nav>    
+    <div class="container">
+        <div class="left-column">
+            <h3>Add Recipe</h3>
+
+            <form>
+            <label for="recipe-name">Name:</label>
+            <input type="text" id="recipe-name" required>
+            <br />
+
+            <label for="recipe-ingredients">Ingredients:</label>
+            <textarea id="recipe-ingredients" rows="5" required></textarea>
+            <br />
+
+            <label for="recipe-method">Method:</label>
+            <textarea id="recipe-method" rows="5" required></textarea>
+            <br />
+
+            <button type="submit">Add Recipe</button>
+            </form>
+
+        </div>
+        <div class="right-column">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/65A6deabqcZQX3A189T5pR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div id="recipe-list"></div>
+            <div id="no-recipes">You have no recipes.</div>
+            <div id="search-section">
+                <h3>Recipes List</h3>
+                <label for="search-box">Search:</label>
+                <input type="text" id="search-box">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
